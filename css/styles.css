@@ -147,29 +147,55 @@ img {
                 }
                           .mobile-menu-container.is-open {
                               transform: translateX(0);
-}
-.nav-list {
-    display: block;
-    display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 40px;
-        position: absolute;
-        height: 104px;
-        left: 40px;
-        top: 80px;
-        margin: 0;     
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 40px;
-        text-transform: capitalize;
-        color: var(--text-color)
-}
- .nav-list:last-child .link { 
-    
-    color: var(--bg-ocean-close);
-}
+                            }
+                            .nav-list {
+                                display: block;
+                                display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    padding: 0px;
+                                    gap: 40px;
+                                    position: absolute;
+                                    height: 104px;
+                                    left: 40px;
+                                    top: 80px;
+                                    margin: 0;     
+                                    font-weight: 600;
+                                    font-size: 36px;
+                                    line-height: 40px;
+                                    text-transform: capitalize;
+                                    color: var(--text-color);
+                                }
+                                .nav-list:last-child .link { 
+                                    color: var(--bg-ocean-close);
+                                    }
+                                    .list-contacts {
+                                        display: block;
+                                        display: flex;
+                                            flex-direction: column-reverse;
+                                            align-items: flex-start;
+                                            padding: 0px;
+                                            gap: 40px;
+                                            position: absolute;
+                                            height: 104px;
+                                            left: 40px;
+                                            top: 550px;
+                                            margin: 0;
+                                            color: var(--text-color);
+                                            font-weight: 500;
+                                            font-size: 20px;
+                                            line-height: 1.33;
+                                            letter-spacing: 0.02em
+                                            }
+                                            .list-contacts:last-child {
+                                                    font-weight: 600;
+                                                    font-size: 36px;
+                                                    line-height: 1.1;
+                                                    text-transform: capitalize;
+                                                    color: var(--primarybrand-color);
+                                                    display: block;
+                                            }
+
 }
 
 
