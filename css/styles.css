@@ -830,7 +830,7 @@ fill:  var(--bg-color)
     }  
     /* ------------Footer--------- */
  .footer {
-        display:none;
+        
     padding-top: 100px;
     padding-bottom: 100px;
     background: var(--dark-color);
