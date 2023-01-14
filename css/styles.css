@@ -13,7 +13,6 @@
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
 --baton-order-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     --bg-modal-color: #FCFCFC;
     --bg-close: #E7E9FC;
     --bg-ocean-close:#404BBF;
@@ -65,7 +64,7 @@ padding-top: 24px;
 padding-bottom: 24px;
 padding-left: 16px;
 padding-right: 16px;
-box-shadow: var(--header-box-shadow);
+border-bottom: var(--header-box-shadow);
 }
 .link-logo {
 font-family: 'Raleway', sans-serif;
@@ -265,6 +264,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transform: translateX(0);
 }
 .mobile-menu-container .nav-list {
+position: relative;
 display: block;
 padding: 0px;
 gap: 40px;
@@ -297,9 +297,30 @@ line-height: 1.1;
 text-transform: capitalize;
 color: var(--text-color);
 }
-.link-list:last-child .link { 
-color: var(--bg-ocean-close);
-}
+.current-pag::after{
+position: absolute;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 4px;
+    bottom: 160px;
+    background-color: var(--primarybrand-color);
+    border-radius: 2px;
+    }
+.current-pages::after{
+position: absolute;
+    display: block;
+    content: "";
+     width: 60%;
+    height: 4px;
+    bottom: 80px;
+    
+    background-color: var(--primarybrand-color);
+    border-radius: 2px;
+    }
+    .current-page {
+    color: var(--primarybrand-color);
+    } 
 .contacts-item:first-child:first-child .link {
 font-weight: 500;
 font-size: 20px;
@@ -323,10 +344,10 @@ letter-spacing: 0.02em
 }
 .contacts-item:last-child .link {
 font-weight: 600;
-font-size: 36px;
+font-size: 7vw;
 line-height: 1.1;
 text-transform: capitalize;
-color: var(--primarybrand-color);
+color: var(--text-color);
 display: block;
 }
 .mobile-menu-social {
@@ -346,6 +367,14 @@ background-color: var(--primarybrand-color);
 transition-property: background-color;
 transition-duration: 1000ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover,
+.link:focus {
+    color: var(--bg-ocean-close);
+}
+.contacts-item:hover,
+.contacts-item:focus {
+    color: var(--primarybrand-color);
 }
 .social-list-link-mobile:hover,
 .social-list-link-mobile:focus {
