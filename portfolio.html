@@ -17,18 +17,62 @@
     <!--header-->
 <header class="header">
     <div class="container">
-        <nav class="nav ">
-            <a href="./index.html" class="link-logo"><span class="logo">Web</span><span class="studio">Studio</span></a>
-            <ul class="list-nav nav-list">
-                <li class="link-list"><a href="./index.html" class="link nav-link">Studio</a></li>
-                <li class="link-list"><a href="./portfolio.html" class="link current-page nav-link">Portfolio</a></li>
-                <li class="link-list"><a href="" class="link nav-link">Contacts</a></li>
-            </ul>
-        </nav>
-        <ul class="list-nav list-contacts">
-            <li class="contacts-item"><a href="" class="link-contacts">info@devstudio.com</a></li>
-            <li class="contacts-item"><a href="" class="link-contacts">+11 (000) 111-11-11</a></li>
-        </ul>
+        <a href="#" class="link-logo"><span class="logo">Web</span><span class="studio">Studio</span></a>
+        <button type="button" class="mobile-menu-button-open menu-toggle js-open-menu" aria-expanded="false"
+            aria-controls="mobile-menu">
+            <svg class="mobile-menu-icon" width="32" height="22">
+                <use href="./images/icons.svg#hamburger"></use>
+            </svg>
+        </button>
+
+        <div class="mobile-menu-container js-menu-container menu-container" id="mobile-menu">
+            <div class="mobile-menu">
+                <ul class="list nav-list">
+                    <li class="link-list"><a href="./index.html" class="link">Studio</a></li>
+                    <li class="link-list "><a href="#" class="link current-page">Portfolio</a></li>
+                    <li class="link-list"><a href="#" class="link">Contacts</a></li>
+                </ul>
+                <ul class="list list-contacts">
+                    <li class="contacts-item"><a href="#" class="link-contacts link">info@devstudio.com</a></li>
+                    <li class="contacts-item"><a href="#" class="link-contacts link">+11 (000) 111-11-11</a></li>
+                </ul>
+                <button class="mobile-menu-close-btn menu-toggle js-close-menu">
+                    <svg class="mobile-menu-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu-list mobile-menu-social">
+                    <li class="mobile-list-social">
+                        <a href="#" class="social-list-link">
+                            <svg class="list-link-items" width="24" height="24">
+                                <use href="./images/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-list-social">
+                        <a href="#" class="social-list-link">
+                            <svg class="list-link-items" width="24" height="24">
+                                <use href="./images/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-list-social">
+                        <a href="#" class="social-list-link">
+                            <svg class="list-link-items" width="24" height="24">
+                                <use href="./images/icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-list-social">
+                        <a href="#" class="social-list-link">
+                            <svg class="list-link-items" width="24" height="24">
+                                <use href="./images/icons.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </header>
     <!--main-->
@@ -243,12 +287,14 @@
                     </li>
                 </ul>
             </div>
-            <!-- form-subscribe-->
-            <form class="form-subscribe">
-                <label class="subscribe-label" for="user-email">Subscribe</label>
-                <div class="subscribe-area">
-                    <input class="email-input-footer" type="email" name="email" id="user-email" placeholder="E-mail" required
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+    
+            <form class="subscribe-area">
+                <p class="subscribe-label">Subscribe</p>
+                <div class="form-subscribe">
+                    <label for="user-email">
+                        <input class="email-input-footer" type="email" name="email" id="user-email" placeholder="E-mail"
+                            required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                    </label>
                     <button class="send-btn" type="submit">
                         <span class="text-btn">Subscribe</span>
                         <svg class="icon-send" width="24" height="20">
@@ -258,6 +304,7 @@
                 </div>
             </form>
         </div>
+    
     </footer>
 </body>
 </html>
