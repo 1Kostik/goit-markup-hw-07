@@ -67,8 +67,6 @@ img {
   height: 70px;
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
   padding-left: 16px;
   padding-right: 16px;
   
@@ -158,7 +156,7 @@ img {
 
 /* -----------------------Feature--------------------------- */
 .text-features {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -1264,20 +1262,24 @@ img {
     color: var(--primarybrand-color);
   }
   /*_______________maine-hero_______________________*/
-  .hero .container {
-    height: 435px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100vw;
+  .hero {
+    margin: 0 auto;
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-offic-tablet.jpg);
-    padding-top: 112px;
-    padding-bottom: 112px;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat
+  }
+  .hero .container {
+   
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -1304,6 +1306,9 @@ img {
         ),
         url(../images/people-offic-tablet_2x.jpg);
     }
+  }
+  .hero-name {
+    width: 496px
   }
   .mobile-menu-social {
     display: none;
@@ -1364,6 +1369,7 @@ img {
 
   .text-features {
     width: 356px;
+    font-weight: 500;
   }
   .list {
     list-style: none;
@@ -2009,7 +2015,7 @@ img {
     display: none;
   }
   .container {
-    width: 1200px;
+    width: 1158px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -2281,8 +2287,10 @@ img {
     gap: 24px;
   }
   .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background: var(--cloud-color);
-    text-align: center;
+    
   }
   .team-cards {
     text-align: center;
