@@ -35,7 +35,7 @@ ul {
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .list {
@@ -58,6 +58,10 @@ img {
   padding-right: 16px;
 }
 /* -----------------------Header---------------------------- */
+.header {
+  border-bottom: 1px solid hsl(240, 8%, 90%);
+ box-shadow:var(--header-box-shadow) ;
+}
 .header .container {
   position: relative;
   height: 70px;
@@ -67,7 +71,7 @@ img {
   padding-bottom: 24px;
   padding-left: 16px;
   padding-right: 16px;
-  border-bottom: var(--header-box-shadow);
+  
 }
 .link-logo {
   font-family: "Raleway", sans-serif;
@@ -183,7 +187,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 428px;
+    max-width: 428px;
   }
   .nav-list {
     display: none;
@@ -237,7 +241,7 @@ img {
     flex-direction: column;
     position: relative;
     max-width: 428px;
-    max-height: 796px;
+    /* max-height: 796px; */
     padding: 40px;
     margin: auto;
     height: 100%;
@@ -299,7 +303,7 @@ img {
     position: absolute;
     display: block;
     content: "";
-    width: 50%;
+    width: 32%;
     height: 4px;
     bottom: 160px;
     background-color: var(--primarybrand-color);
@@ -309,7 +313,7 @@ img {
     position: absolute;
     display: block;
     content: "";
-    width: 60%;
+    width: 43%;
     height: 4px;
     bottom: 80px;
 
@@ -425,6 +429,7 @@ img {
     }
   }
   .text {
+    color: var(--text-color);
     line-height: 1.5;
   }
   .container {
@@ -698,8 +703,8 @@ img {
     display: none;
   }
   .section .container {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
   .text-features {
     font-weight: 500;
@@ -1062,6 +1067,130 @@ img {
     left: 120px;
     margin-left: 16px;
   }
+.filter-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--primarybrand-color);
+    background-color: var(--cloud-color);
+    border: 1px solid var(--cloud-color);
+    border-radius: 4px;
+    transition-property: box-shadow, background-color, color;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .filter-item {
+    list-style: none;
+  }
+  .filter-btn:hover,
+  .filter-btn:focus {
+    background-color: var(--primarybrand-color);
+    color: var(--bg-color);
+    box-shadow: var(--card-shadow);
+    border-radius: 4px;
+    border: 1px solid var(--primarybrand-color);
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  /* < filter-list> */
+  .filter-btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 4px;
+  }
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-bottom: 48px;
+    gap: 16px 24px;
+    padding-left: 0px;
+  }
+  /* <portfolio-cards> */
+  .portfolio-cards_list {
+    display: flex;
+        row-gap: 48px;
+    
+    padding-left: 0px;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+  .portfolio-cards_item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+    background: #ffffff;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3f51b5;
+    transform: translateY(101%);
+    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+  }
+  .cards-thums {
+    max-width: 396px;
+    position: relative;
+    overflow: hidden;
+  }
+  .overlay-text {
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    padding: 40px 32px;
+  }
+  .portfolio-cards_box {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid var(--cloud-color);
+    border-top: 0px;
+  }
+  .subtitle {
+    color: var(--dark-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+  .portfolio-link {
+    text-decoration:none;
+    display: block;
+    transition-property: box-shadow, background-color;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-link:hover,
+  .portfolio-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .portfolio-link:hover .overlay,
+  .portfolio-link:focus .overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
 }
 
 /*----------------Tablet header---------------- */
@@ -1069,9 +1198,7 @@ img {
   .header.container {
     max-width: 768px;
   }
-  .container {
-    width: 768px;
-  }
+ 
   .mobile-menu-button-open {
     display: none;
   }
@@ -1183,6 +1310,9 @@ img {
   }
   .icons {
     display: none;
+  }
+   .container {
+    width: 768px;
   }
   /* ________________maine-Feature_________________ */
   .section {
@@ -1725,6 +1855,126 @@ img {
   .send-form-btn:active {
     background-color: var(--bt-color);
   }
+ .filter-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--primarybrand-color);
+    background-color: var(--cloud-color);
+    border: 1px solid var(--cloud-color);
+    border-radius: 4px;
+    transition-property: box-shadow, background-color, color;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .filter-item {
+    list-style: none;
+  }
+  .filter-btn:hover,
+  .filter-btn:focus {
+    background-color: var(--primarybrand-color);
+    color: var(--bg-color);
+    box-shadow: var(--card-shadow);
+    border-radius: 4px;
+    border: 1px solid var(--primarybrand-color);
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  /* < filter-list> */
+  .filter-btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 4px;
+  }
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    gap: 24px;
+    padding-left: 0px;
+  }
+  /* <portfolio-cards> */
+  .portfolio-cards_list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+    padding-left: 0px;
+  }
+  .portfolio-cards_item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+    background: #ffffff;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3f51b5;
+    transform: translateY(101%);
+    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+  }
+  .cards-thums {
+    position: relative;
+    overflow: hidden;
+    width: 356px;
+  }
+  .overlay-text {
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    padding: 40px 32px;
+  }
+  .portfolio-cards_box {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid var(--cloud-color);
+    border-top: 0px;
+  }
+  .subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+  .portfolio-link {
+    display: block;
+    transition-property: box-shadow, background-color;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-link:hover,
+  .portfolio-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .portfolio-link:hover .overlay,
+  .portfolio-link:focus .overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
 }
 /* --------------------Desktop------------------- */
 @media screen and (min-width: 1200px) {
@@ -2263,7 +2513,7 @@ img {
   .portfolio-cards_list {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 48px;
+    row-gap: 72px;
     column-gap: 24px;
     padding-left: 0px;
   }
@@ -2359,7 +2609,7 @@ img {
   .subscribe-area {
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
+   margin-left: auto
   }
   .email-input-footer {
     width: 264px;
