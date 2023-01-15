@@ -162,7 +162,7 @@ img {
   letter-spacing: 0.02em;
   text-align: left;
 }
-.title-cards {
+/* .title-cards {
   font-weight: 500;
   font-size: 36px;
   line-height: 1.2;
@@ -171,7 +171,7 @@ img {
   margin-bottom: 8px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 /* -----------------------Our work-------------------------- */
 /* -----------------------Team cards------------------------ */
 /* -----------------------CUSTOMERS------------------------- */
@@ -729,8 +729,8 @@ img {
   }
   .title {
     text-align: center;
-    font-family: inherit;
-    font-weight: 500;
+   
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -740,11 +740,19 @@ img {
   }
   .title-cards {
     font-weight: 500;
-    font-size: 36px;
+    font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color:var(--dark-color);
+    padding-bottom: 8px;
+  }
+  .title-card-feature {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
     color: var(--dark-color);
-    margin-bottom: 8px;
+   padding-bottom: 8px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -801,7 +809,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--text-color);
     padding-left: 0px;
-    margin-bottom: 72px;
+    
     list-style: none;
   }
   .team-cadrs_box {
@@ -811,7 +819,13 @@ img {
     padding-right: 16px;
   }
   .team-profession {
-    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    padding-bottom: 8px;
   }
   .section-work {
     display: none;
@@ -1327,6 +1341,32 @@ img {
     list-style: none;
     gap: 72px 24px;
   }
+  .team-cards {
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    border-radius: 4px;
+    background-color: var(--bg-color);
+  }
+  
+  .title-cards {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+   padding-bottom: 8px;
+    
+  }
+  .title-card-feature {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+    padding-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .social-links-icons {
     display: flex;
     list-style: none;
@@ -1353,7 +1393,7 @@ img {
   .title {
     text-align: center;
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -1386,10 +1426,12 @@ img {
     background-color: var(--cloud-color);
   }
   .team-cadrs_box {
-    margin-top: 32px;
-    margin-bottom: 32px;
-    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
+
   .title-cards-team {
     font-weight: 500;
     font-size: 20px;
@@ -1400,10 +1442,10 @@ img {
   }
   .team-profession {
     text-align: center;
-    margin-bottom: 8px;
+   padding-bottom: 8px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
   }
@@ -2143,11 +2185,11 @@ img {
     padding-left: 32px;
   }
   .hero-name {
-    width: 492px;
+    width: 496px;
     margin-right: auto;
     margin-left: auto;
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -2227,7 +2269,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 8px;
+   margin-bottom: 8px;
     background-color: var(--cloud-color);
     width: 264px;
   }
@@ -2274,7 +2316,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-color);
-    margin-bottom: 8px;
+    padding-bottom: 8px;
   }
   .list {
     display: flex;
@@ -2289,12 +2331,12 @@ img {
   .team {
     padding-top: 120px;
     padding-bottom: 120px;
-    background: var(--cloud-color);
+    background-color: var(--cloud-color);
     
   }
   .team-cards {
     text-align: center;
-    background: var(--bg-color);
+    background-color: var(--bg-color);
     box-shadow: var(--card-shadow);
     border-radius: 4px;
   }
@@ -2324,7 +2366,12 @@ img {
     padding-right: 16px;
   }
   .team-profession {
-    margin-bottom: 8px;
+  padding-bottom: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
   }
   .section-work {
     padding-bottom: 120px;
