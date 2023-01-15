@@ -385,11 +385,12 @@ img {
     background-color: var(--bg-ocean-close);
     fill: var(--bg-color);
   }
-  .hero .container {
-    height: 432px;
-    margin-left: auto;
-    margin-right: auto;
+  .hero  {
+    
+    margin: 0 auto;
     width: 100vw;
+    max-width: 768px;
+
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -434,22 +435,11 @@ img {
     max-width: 428px;
     width: 100vw;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   /* ________main-mobile_______ */
-  .hero .container {
-    height: 432px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100vw;
-    max-width: 768px;
 
-    padding-top: 112px;
-    padding-bottom: 112px;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
   .hero > .container {
     text-align: center;
   }
@@ -700,7 +690,9 @@ img {
   .icons {
     display: none;
   }
-  .section .container {
+
+  .section {
+    margin: 0 auto;
     padding-top: 48px;
     padding-bottom: 48px;
   }
@@ -826,7 +818,9 @@ img {
     padding-bottom: 120px;
   }
 
-  .team .container {
+  .team  {
+    margin: 0 auto;
+     background: var(--cloud-color);
     padding-top: 96px;
     padding-bottom: 128px;
   }
