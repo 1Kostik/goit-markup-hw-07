@@ -1321,6 +1321,7 @@ img {
   }
   /* ________________maine-Feature_________________ */
   .section {
+    margin: 0 auto;
     padding-top: 96px;
     padding-bottom: 96px;
   }
@@ -1380,11 +1381,16 @@ img {
     color: var(--text-color);
   }
   .team .container {
+    width:768px;
+
+  }
+  /* _______________Team cards__________________ */
+  .team {
+    margin: 0 auto;
     padding-top: 96px;
     padding-bottom: 104px;
     background-color: var(--cloud-color);
   }
-  /* _______________Team cards__________________ */
   .team-cadrs_box {
     margin-top: 32px;
     margin-bottom: 32px;
