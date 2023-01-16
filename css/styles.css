@@ -331,12 +331,14 @@ img {
     text-transform: capitalize;
     color: var(--text-color);
   }
-
+  
   .current-page {
     color: var(--primarybrand-color);
   }
+   
 
-  .contacts-item:first-child:first-child .link {
+   .link-contacts {
+    text-decoration: none;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -356,11 +358,10 @@ img {
     letter-spacing: 0.02em;
   }
 
-  .mobile-menu-container .contacts-item:last-child {
+  .contacts-item:last-child {
     margin-bottom: 40px;
   }
-
-  .contacts-item:last-child .link {
+  .link-tel {
     font-weight: 600;
     font-size: 7vw;
     line-height: 1.1;
@@ -368,6 +369,8 @@ img {
     color: var(--text-color);
     display: block;
   }
+
+ 
 
   .mobile-menu-social {
     list-style: none;
@@ -1362,16 +1365,26 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .contacts-item:first-child {
-    margin-bottom: 4px;
+   padding-top: 7px;
     font-weight: 400;
+    margin-bottom: 3px;
   }
-
+.contacts-item:last-child {
+padding-bottom: 7px;
+padding-top: 0px;
+}
   .link-contacts {
+    text-decoration: none;
+   font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+   
     font-weight: 400;
   }
 
