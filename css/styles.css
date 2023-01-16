@@ -805,7 +805,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-color);
-    padding-bottom: 8px;
+   margin-bottom: 8px;
   }
 
   .title-card-feature {
@@ -814,7 +814,7 @@ img {
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--dark-color);
-    padding-bottom: 8px;
+    
     margin-left: auto;
     margin-right: auto;
   }
@@ -895,7 +895,7 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
   }
 
   .section-work {
@@ -1370,13 +1370,15 @@ img {
   }
 
   .contacts-item:first-child {
-   padding-top: 7px;
+   
     font-weight: 400;
     margin-bottom: 4px;
   }
-.contacts-item:last-child {
-padding-bottom: 7px;
-padding-top: 0px;
+  .link-mail {
+    padding-top: 12px;
+  }
+.link-tel {
+padding-bottom: 12px;
 }
   .link-contacts {
     text-decoration: none;
@@ -1496,7 +1498,7 @@ padding-top: 0px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-color);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 
   }
 
@@ -1506,7 +1508,7 @@ padding-top: 0px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--dark-color);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1594,7 +1596,7 @@ padding-top: 0px;
 
   .team-profession {
     text-align: center;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -1796,7 +1798,9 @@ padding-top: 0px;
     width: 100%;
     margin-left: 108px;
   }
-
+/* .user-email {
+  
+} */
   .email-input-footer {
     width: 264px;
     height: 40px;
@@ -2583,7 +2587,7 @@ padding-top: 0px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-color);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
   }
 
   .list {
@@ -2640,7 +2644,7 @@ padding-top: 0px;
   }
 
   .team-profession {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
